@@ -1,0 +1,42 @@
+git init
+git init -b "main"
+git config --global --list
+git config --global user.name
+git status
+git add fileName
+git add -A [for all file]
+git add . [all file but not the sub folder files]
+git add *.js [for js file]
+git add **/*.js [for all js file also the sub folder files]
+git rm --cached fileName to unstage
+git restore --staged <file>..." to unstage
+git log
+git commit -m "my first commit"
+Note = everytime you have to add in the stage area if you modify the file
+hello
+direct commit without staging area
+git commit -a -m "my 4th commit"
+
+git diff (on working area)
+git diff --staged (if it is on stage area)
+
+
+// reset is risky (you can loose your data parmanently so use git checkout)
+git reset --soft HEAD^ (undo committing)
+git reset HEAD^ (undo committing and also unstage)
+git reset --hard HEAD^ (undo committing, unstage and back to previous commit)
+git reset -soft HEAD-N (multiple undo committing)
+
+git log --oneline (short info)
+git show commit_id / git show HEAD~number (to show the changes on that commit)
+
+git checkout commit_id/ HEAD~number
+
+
+//connect with the github
+git remote
+git remote -v
+git remote add name link
+
+git clone link
+rm -rf Name (delete folder)
